@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FreeGameVault</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body{
+    margin:0;
+    font-family:'Inter', sans-serif;
+    background:#f5f7fb;
+    color:#111827;
+}
+
+/* HEADER */
+header{
+    background:white;
+    padding:30px 20px;
+    text-align:center;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.logo{
+    font-size:40px;
+    font-weight:800;
+    letter-spacing:-1px;
+}
+
+header p{
+    color:#6b7280;
+    margin-top:6px;
+}
+
+/* GRID */
+.games{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:22px;
+    padding:30px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 8px 22px rgba(0,0,0,0.06);
+    transition:0.25s ease;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 14px 30px rgba(0,0,0,0.12);
+}
+
+/* IMAGE */
+.game-img{
+    height:160px;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+/* DARK OVERLAY TEXT */
+.game-tag{
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    background:rgba(0,0,0,0.6);
+    color:white;
+    padding:5px 10px;
+    border-radius:8px;
+    font-size:12px;
+}
+
+/* INFO */
+.info{
+    padding:16px;
+}
+
+.info h2{
+    margin:0;
+    font-size:18px;
+}
+
+.rating{
+    color:#f59e0b;
+    font-size:14px;
+    margin:6px 0;
+}
+
+.desc{
+    font-size:13px;
+    color:#6b7280;
+    margin-bottom:10px;
+}
+
+/* BUTTON */
+.btn{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    background:#111827;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#374151;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:25px;
+    color:#9ca3af;
+    font-size:13px;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">FreeGameVault</div>
+    <p>Game Showcase & Demo Library</p>
+</header>
+
+<section class="games">
+
+    <div class="card">
+        <div class="game-img" style="background-image:url('https://images.unsplash.com/photo-1605901309584-818e25960a8f');">
+            <div class="game-tag">Open World</div>
+        </div>
+        <div class="info">
+            <h2>Minecraft</h2>
+            <div class="rating">⭐⭐⭐⭐⭐ 4.9</div>
+            <div class="desc">Explore infinite worlds, build structures, and survive adventures.</div>
+            <button class="btn">View Details</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="game-img" style="background-image:url('https://images.unsplash.com/photo-1603481546238-487240415921');">
+            <div class="game-tag">Action</div>
+        </div>
+        <div class="info">
+            <h2>GTA V</h2>
+            <div class="rating">⭐⭐⭐⭐⭐ 4.8</div>
+            <div class="desc">Experience a massive open world filled with missions and freedom.</div>
+            <button class="btn">View Details</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="game-img" style="background-image:url('https://images.unsplash.com/photo-1614294148960-9aa740632a87');">
+            <div class="game-tag">Adventure</div>
+        </div>
+        <div class="info">
+            <h2>Red Dead Redemption 2</h2>
+            <div class="rating">⭐⭐⭐⭐⭐ 4.9</div>
+            <div class="desc">A cinematic western adventure with an emotional story.</div>
+            <button class="btn">View Details</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="game-img" style="background-image:url('https://images.unsplash.com/photo-1542362567-b07e54358753');">
+            <div class="game-tag">Racing</div>
+        </div>
+        <div class="info">
+            <h2>Forza Horizon 5</h2>
+            <div class="rating">⭐⭐⭐⭐⭐ 4.7</div>
+            <div class="desc">High-speed racing across beautiful open-world environments.</div>
+            <button class="btn">View Details</button>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 FreeGameVault — Concept UI Demo
+</footer>
+
+</body>
+</html>
+Can you make it say instead of view details download now?
